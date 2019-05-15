@@ -4,7 +4,22 @@
 
 Michael & Ylianna (M&Y) Didashi approached Sky Springs to package water for their Heart Water brand that they plan on launching. Michael has an [inspiring background](https://en.wikipedia.org/wiki/Michael_Dadashi) and he and his wife believe in giving back to society. With Heart Water, they plan on selling bottled water that funds charitable causes.
 
-M&Y planned on wiriting their message of giving on every bottle that they sold. Reed and Narayan met with M&Y and introduced the concept of a unique QR code on each package. This QR code would use the iPhone/Android native Camera apps in order to launch a unique static web page to:
+M&Y planned on wiriting their message of giving on every bottle that they sold. Reed and Narayan met with M&Y and introduced the concept of a unique QR code on each package.
+
+All the data gathered during the production of water would be summarized into a unique QR code per bottle. This data includes:
+
+* Weather Forecasts
+* Collection Source (Location)
+* Raw Water Quality
+* Storage Water Levels
+* Flow Rates
+* Reagents/Chemicals Consumed
+* Spectrometer Readings
+* Processed Water Quality
+* Packaging Metrics
+* Personnel Involved
+
+This QR code would use the iPhone/Android native Camera apps in order to launch a unique static web page to:
 
 1. Provide ingredients and production data about the bottle
 1. Provide details about the charity that that bottle purchase funded
