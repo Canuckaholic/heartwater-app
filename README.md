@@ -7,11 +7,22 @@ Michael & Ylianna (M&Y) Didashi approached Sky Springs to package water for thei
 M&Y planned on wiriting their message of giving on every bottle that they sold. Reed and Narayan met with M&Y and introduced the concept of a unique QR code on each package. This QR code would use the iPhone/Android native Camera apps in order to launch a unique static web page to:
 
 1. Provide ingredients and production data about the bottle
-2. Provide details about the charity that that bottle purchase funded
-3. Allow users to contribute additional funds to the cause
-4. Sign up to follow the project story to conclusion
+1. Provide details about the charity that that bottle purchase funded
+1. Allow users to contribute additional funds to the cause
+1. Sign up to follow the project story to conclusion
 
 This repo is the static website that will be launched when the user scans the QR code.
+
+## Overall Experience
+
+1. User launches the Camera app on their phone
+1. User scans the QR code on the bottle or water pouch
+1. User clicks "Open in Safari..." when the QR code is detected
+1. Safari launches the static Heartwater Demo page
+1. User reads the page
+1. [Optional] User clicks on the Apple Pay icon
+1. User selects the amount they want to donate ($1, $5, $10, $20, $50, other)
+1. User uses TouchID or FaceID to pay
 
 ## Delivery & Project Plan
 
@@ -24,7 +35,7 @@ The static website will be hosted in a public GitHub Page
 The project will use:
 
 1. Static CSS/HTML
-2. JavaScript
-3. Apple Pay
+1. JavaScript
+1. Apple Pay
 
 
