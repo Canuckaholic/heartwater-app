@@ -11,7 +11,43 @@ window.routes = [
 	},
 	{
 		path: '/home',
-		componentUrl: './partials/screens/home.html'
+		componentUrl: './partials/custom/home.html'
+	},
+	{
+		path: '/water-report',
+		componentUrl: './partials/custom/water-report.html',
+		routes: [
+			{
+				path: '/scan-qr-code',
+				componentUrl: './partials/custom/scan-qr-code.html'
+			},
+			{
+				path: '/view-report',
+				componentUrl: './partials/custom/view-report.html'
+			},
+			{
+				path: '/view-report-history',
+				componentUrl: './partials/custom/view-report-history.html'
+			},
+		]
+	},
+	{
+		path: '/about',
+		componentUrl: './partials/custom/about.html',
+		routes: [
+			{
+				path: '/about-sky-spings',
+				componentUrl: './partials/custom/about-sky-spings.html'
+			},
+			{
+				path: '/about-heart-water',
+				componentUrl: './partials/custom/about-heart-water.html'
+			},
+			{
+				path: '/charities',
+				componentUrl: './partials/custom/charities.html'
+			},
+		]
 	},
 	{
 		path: '/components',

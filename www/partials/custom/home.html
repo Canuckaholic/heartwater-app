@@ -1,0 +1,369 @@
+<template>
+    <div class="page no-swipeback">
+  
+      <div class="navbar">
+        <div class="navbar-inner">
+          {{#js_if "app.data.config.theme.navigation == 'hamburger'"}}
+          <div class="left">
+            <a href="#" class="link icon-only panel-open" data-panel="left">
+              <i class="hamburger hamburger--boring">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </i>
+            </a>
+          </div>
+          {{/js_if}}
+          <div class="title">
+            <img class="ios-only theme-light-only" src="assets/custom/img/logo-text-black.svg" alt="" />
+            <img class="ios-only theme-dark-only" src="assets/custom/img/logo-text-color.svg" alt="" />
+            <img class="md-only" src="assets/custom/img/logo-text-color.svg" alt="" />
+          </div>
+          <div class="right">
+            <a href="#" class="link icon-only" @click="openLanguageSelector">
+              <i class="icon material-icons">language</i>
+            </a>
+            <!-- <a href="#" class="link icon-only" @click="openThemeSelector">
+              <i class="icon material-icons">palette</i>
+            </a> -->
+          </div>
+        </div>
+      </div>
+  
+      <div class="page-content">
+  
+        <div class="slider-hero">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="slide-content" style="background-image: url('assets/custom/img/rainfall.jpg');">
+                  <div class="slide-media">
+                    <img src="assets/custom/img/logo-white.svg" width="56" alt="" />
+                  </div>
+                  <div class="slide-title">Heart Water by Sky Springs</div>
+                  <div class="slide-text">Serving the world one drop at a time</div>
+                </div>
+              </div>
+  
+              <!-- <div class="swiper-slide">
+                <div class="slide-content" style="background-image: linear-gradient(-20deg, #667EEA 0%, #764BA2 100%);">
+                  <div class="slide-media">
+                    <i class="fa-stack fa-2x">
+                      <span class="fas fa-circle fa-stack-2x text-color-white"></span>
+                      <span class="fas fa-mobile-alt fa-stack-1x" style="color: #667EEA;"></span>
+                    </i>
+                  </div>
+                  <div class="slide-title">Modern & Responsive</div>
+                  <div class="slide-text">Nectar is designed with modern trends and techniques in mind. It will look smashing on every device.</div>
+                </div>
+              </div> -->
+  
+              <div class="swiper-slide">
+                <div class="slide-content" style="background-image: url('assets/custom/img/rainfall.jpg'); background-position: bottom center;">
+                  <div class="slide-media">
+                    <i class="fa-stack fa-2x">
+                      <span class="fas fa-circle fa-stack-2x text-color-white"></span>
+                      <span class="fas fa-qrcode fa-stack-1x" style="color: #33A3E6;"></span>
+                    </i>
+                  </div>
+                  <div class="slide-title">Water Report</div>
+                  <div class="slide-text">Scan the QR code on your bottle or pouch to learn exactly what's in your water.</div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="slide-content" style="background-image: url('assets/custom/img/rainfall2.jpg');">
+                  <div class="slide-media">
+                    <i class="fa-stack fa-2x">
+                      <span class="fas fa-circle fa-stack-2x text-color-white"></span>
+                      <span class="fas fa-hand-holding-heart fa-stack-1x" style="color: #62E31C;"></span>
+                    </i>
+                  </div>
+                  <div class="slide-title">Support Charities</div>
+                  <div class="slide-text">Partial proceeds of every Heart Water sold helps to fund important charities.</div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="slide-content" style="background-image: url('assets/custom/img/rainfall2.jpg'); background-position: center center;">
+                  <div class="slide-media">
+                    <i class="fa-stack fa-2x">
+                      <span class="fas fa-circle fa-stack-2x text-color-white"></span>
+                      <span class="fas fa-donate fa-stack-1x" style="color: #F59700;"></span>
+                    </i>
+                  </div>
+                  <div class="slide-title">Donate Today</div>
+                  <div class="slide-text">Learn more about the charity that your purchase is helping to support, and donate additional funds to the cause.</div>
+                  <div class="slide-actions">
+                    <a href="{{$root.config.donate.itemUrl}}" target="_blank" class="button button-fill color-white external" style="color: #F59700;">Donate Now</a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+  
+        <div class="list media-list no-hairlines no-hairlines-between margin-vertical">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-media">
+                  <img src="assets/custom/img/SkyBottleBlueLid-small.png" width="48" alt="" />
+                </div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Cloud-based (rain clouds, that is)</div>
+                  </div>
+                  <div class="item-text">Captured directly from the clouds, Sky Springs Rain never touches the ground. With no additives, minerals, or pollutants, it is the purest water on the market.</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-media">
+                  <img src="assets/custom/img/Pillow-small.png" width="48" alt="" />
+                </div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">No chemicals added — ever!</div>
+                  </div>
+                  <div class="item-text">Packaged in biodegradable bottles and caps or pillows in the heart of Texas. We add no chemicals or additives to our filtered, UV and ozone treated rainwater.</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-media">
+                  <img src="assets/custom/img/SkyBottleBlueLid-small.png" width="48" alt="" />
+                </div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Sky Spring delivers pure sustainably sourced rainwater with pure intentions.</div>
+                  </div>
+                  <div class="item-text">Our packaging is 100% recyclable, our bottles use ENSO RESTORE which has a landfill biodegradability of 32.7% in 10 months in an anaerobic landfill.</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-media">
+                  <img src="assets/custom/img/Pillow-small.png" width="48" alt="" />
+                </div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">ARCSA</div>
+                  </div>
+                  <div class="item-text">For each purchase of the co-branded ARCSA product that Sky Springs sells, we will donate a portion to the non-profit for rainwater resources and education.</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+  
+    </div>
+  </template>
+  
+  <style scoped>
+    .slider-hero .swiper-container {
+      height: 352px;
+      height: 50vh;
+    }
+  
+    .slider-hero .swiper-slide {
+      box-sizing: border-box;
+      padding: 16px;
+    }
+  
+    .slider-hero .slide-content {
+      align-items: center;
+      border-radius: 16px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      padding: 16px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .slider-hero .slide-media {
+      height: 56px;
+    }
+  
+    .slider-hero .slide-title {
+      font-size: 22px;
+      margin-top: 8px;
+    }
+  
+    .slider-hero .slide-text {
+      font-size: 15px;
+      margin-top: 8px;
+    }
+  
+    .slider-hero .slide-actions {
+      margin-top: 16px;
+    }
+  
+    .swiper-container-3d .swiper-slide-shadow-left {
+      background-image: none;
+    }
+  
+    .swiper-container-3d .swiper-slide-shadow-right {
+      background-image: none;
+    }
+  </style>
+  
+  <script>
+    return {
+      data: function() {
+        return {
+          sliderHero: null
+        }
+      },
+      methods: {
+        showToolbar: function() {
+          var self = this;
+          setTimeout(function() {
+            self.$('.toolbar').removeClass('toolbar-hidden');
+          });
+        },
+        initializeSliderHero: function() {
+          var self = this;
+          self.sliderHero = app.swiper.create('.slider-hero .swiper-container', {
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false
+            },
+            centeredSlides: true,
+            effect: 'coverflow',
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true
+            },
+            grabCursor: true,
+            loop: true,
+            slidesPerView: 'auto'
+          });
+        },
+        openLanguageSelector: function() {
+          var self = this;
+          var languageSelector = app.actions.create({
+            grid: true,
+            buttons: [
+              {
+                label: true,
+                text: i18next.t('change-language')
+              },
+              {
+                icon: '<img src="assets/custom/img/flag-united-kingdom.svg" alt="" width="48" />',
+                text: i18next.t('english') ,
+                onClick: function() {
+                  app.utils.i18n.setLanguage({lang: 'en', dir: 'ltr'});
+                }
+              },
+              {
+                icon: '<img src="assets/custom/img/flag-india.svg" alt="" width="48" />',
+                text: i18next.t('hindi'),
+                onClick: function() {
+                  app.utils.i18n.setLanguage({lang: 'hi', dir: 'ltr'});
+                }
+              },
+              {
+                icon: '<img src="assets/custom/img/flag-saudi-arabia.svg" alt="" width="48" />',
+                text: i18next.t('arabic'),
+                onClick: function() {
+                  app.utils.i18n.setLanguage({lang: 'ar', dir: 'rtl'});
+                }
+              }
+            ]
+          });
+          languageSelector.open();
+        },
+        openThemeSelector: function() {
+          var self = this;
+          var themeSelector = app.actions.create({
+            grid: true,
+            buttons: [
+              {
+                label: true,
+                text: i18next.t('change-theme')
+              },
+              {
+                icon: '<i class="fas fa-3x fa-circle text-color-red"></i>',
+                text: i18next.t('red'),
+                onClick: function() {
+                  app.utils.theme.setColor('red');
+                }
+              },
+              {
+                icon: '<i class="fas fa-3x fa-circle text-color-green"></i>',
+                text: i18next.t('green'),
+                onClick: function() {
+                  app.utils.theme.setColor('green');
+                }
+              },
+              {
+                icon: '<i class="fas fa-3x fa-circle text-color-blue"></i>',
+                text: i18next.t('blue'),
+                onClick: function() {
+                  app.utils.theme.setColor('blue');
+                }
+              },
+              {
+                icon: '<i class="fas fa-3x fa-circle text-color-pink"></i>',
+                text: i18next.t('pink'),
+                onClick: function() {
+                  app.utils.theme.setColor('pink');
+                }
+              },
+              {
+                icon: '<i class="fas fa-3x fa-circle text-color-yellow"></i>',
+                text: i18next.t('yellow'),
+                onClick: function() {
+                  app.utils.theme.setColor('yellow');
+                }
+              },
+              {
+                icon: '<i class="fas fa-3x fa-circle text-color-orange"></i>',
+                text: i18next.t('orange'),
+                onClick: function() {
+                  app.utils.theme.setColor('orange');
+                }
+              },
+              {
+                icon: '<i class="fas fa-3x fa-circle text-color-gray"></i>',
+                text: i18next.t('gray'),
+                onClick: function() {
+                  app.utils.theme.setColor('gray');
+                }
+              },
+              {
+                icon: '<i class="fas fa-3x fa-circle text-color-black"></i>',
+                text: i18next.t('black'),
+                onClick: function() {
+                  app.utils.theme.setColor('black');
+                }
+              }
+            ]
+          });
+          themeSelector.open();
+        }
+      },
+      on: {
+        pageInit: function() {
+          var self = this;
+          self.showToolbar();
+          self.initializeSliderHero();
+        }
+      }
+    }
+  </script>

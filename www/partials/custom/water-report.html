@@ -1,0 +1,111 @@
+<template>
+    <div class="page">
+  
+      <div class="navbar">
+        <div class="navbar-inner">
+          {{#js_if "app.data.config.theme.navigation == 'hamburger'"}}
+          <div class="left">
+            <a href="#" class="link back">
+              <i class="icon icon-back"></i>
+              <span class="ios-only" data-i18n="home">Home</span>
+            </a>
+          </div>
+          {{/js_if}}
+          <div class="title">
+            <img class="ios-only theme-light-only" src="assets/custom/img/logo-text-black.svg" alt="" />
+            <img class="ios-only theme-dark-only" src="assets/custom/img/logo-text-color.svg" alt="" />
+            <img class="md-only" src="assets/custom/img/logo-text-color.svg" alt="" />
+          </div>
+          <div class="right">
+            <a href="#" class="link icon-only searchbar-enable" data-searchbar=".searchbar">
+              <i class="icon f7-icons ios-only">search</i>
+              <i class="icon material-icons md-only">search</i>
+            </a>
+          </div>
+          <div class="subnavbar ios-only">
+            <div class="subnavbar-inner">
+              <div class="title" data-i18n="water-report">Water Report</div>
+            </div>
+          </div>
+          <form class="searchbar searchbar-expandable searchbar-init" data-search-container=".search-list" data-search-item="li" data-search-in=".item-title">
+            <div class="searchbar-inner">
+              <div class="searchbar-input-wrap">
+                <input type="search" placeholder="Search" data-i18n="[placeholder]search" />
+                <i class="searchbar-icon"></i>
+                <span class="input-clear-button"></span>
+              </div>
+              <span class="searchbar-disable-button" data-i18n="cancel">Cancel</span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="page-content">
+
+        <div class="searchbar-hide-on-search">
+          <div class="block">
+              <h2 data-i18n="water-report">Water Report</h2>
+          </div>
+        </div>
+
+        <div class="searchbar-not-found">
+          <div class="empty-state">
+            <div class="empty-state-media">
+              <img src="assets/custom/img/no-search.svg" alt="" />
+            </div>
+            <div class="empty-state-title" data-i18n="no-search-results">No Search Results</div>
+            <div class="empty-state-actions">
+              <button type="button" class="button button-big button-fill button-round" data-i18n="try-again" @click="refreshSearchbar">Try Again</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="searchbar-found">
+          <div class="list search-list">
+            <ul>
+              <li>
+                <a href="/water-report/scan-qr-code" class="item-link">
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">Scan QR code</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/water-report/view-report" class="item-link">
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">View my last water report</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/water-report/view-report-history" class="item-link">
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">View my water report history</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </template>
+
+  <script>
+    return {
+      methods: {
+        refreshSearchbar: function() {
+          var self = this;
+          app.searchbar.clear('.searchbar');
+        }
+      }
+    }
+  </script>

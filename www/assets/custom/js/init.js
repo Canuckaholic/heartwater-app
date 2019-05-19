@@ -114,7 +114,7 @@ app.on('init', function() {
 	initializeViews();
 	initializeTheme();
 	initializeI18n();
-	initializeA2HS();
+	// initializeA2HS();
   initializeBackButton();
   getInternetConnectionStatus();
   setAJAXDefaults();
@@ -165,15 +165,21 @@ function initializeViews() {
 	});
 
 	if (window.config.theme.navigation == 'tabbar') {
-		var componentsView = app.views.create('.view-components', {
+		var componentsView = app.views.create('.view-water-report', {
+			url: '/water-report'
+		});
+		var screensView = app.views.create('.view-about', {
+			url: '/about'
+		});
+		var screensView = app.views.create('.view-components', {
 			url: '/components'
 		});
 		var screensView = app.views.create('.view-screens', {
 			url: '/screens'
 		});
-		var moreView = app.views.create('.view-more', {
-			url: '/more'
-		});
+		// var moreView = app.views.create('.view-more', {
+		// 	url: '/more'
+		// });
 	}
 }
 
@@ -325,7 +331,7 @@ function initializeBackButton() {
           }
         );
       }
-			else if (app.data.config.theme.navigation == 'tabbar' && (currentRoute == '/components' || currentRoute == '/screens' || currentRoute == '/more')) {
+			else if (app.data.config.theme.navigation == 'tabbar' && (currentRoute == '/water-report' || currentRoute == '/about' || currentRoute == '/more')) {
 				app.tab.show('#tab-home');
 			}
       else {
