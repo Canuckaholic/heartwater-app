@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<widget id="website.nectar.classic" version="2.3.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<widget android-versionCode="10001" id="com.traxitt.heartwater" ios-CFBundleVersion="1" version="1.0.0" versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 
-	<name>Nectar</name>
-	<description>Mobile Web App Kit</description>
-	<author email="praveen.mujawdiya@gmail.com">Praveen Mujawdiya</author>
+	<name>Heart Water</name>
+	<description>Heart Water by Sky Springs</description>
+	<author email="adrian@traxitt.com">Adrian Jones</author>
 
 	<content src="index.html" />
 
@@ -106,7 +106,7 @@
 	</edit-config>
 
 	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-		<string>Nectar requires location access to find nearby things.</string>
+		<string>This app requires location access to find nearby things.</string>
 	</edit-config>
 	<!-- End: Config Files -->
 

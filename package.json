@@ -1,0 +1,51 @@
+{
+  "name": "heartwater-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "cross-env-shell NODE_ENV=development \"gulp build-app && gulp run-app && gulp server\"",
+    "prod": "cross-env-shell NODE_ENV=production \"gulp run-app && gulp server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/traxitt/heartwater-demo.git"
+  },
+  "author": "Adrian Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/traxitt/heartwater-demo/issues"
+  },
+  "homepage": "http://traxitt.com/",
+  "browserslist": [
+    "Android >= 5",
+    "IOS >= 9.3",
+    "Edge >= 15",
+    "Safari >= 9.3",
+    "Chrome >= 49",
+    "Firefox >= 31",
+    "Samsung >= 5"
+  ],
+  "dependencies": {
+    "dom7": "^2.1.3",
+    "path-to-regexp": "^3.0.0",
+    "ssr-window": "^1.0.1",
+    "template7": "^1.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
+    "acorn": "^6.1.1",
+    "acorn-jsx": "^5.0.1",
+    "browser-sync": "^2.26.5",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-livereload": "^4.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "open": "^6.0.0"
+  }
+}

@@ -236,10 +236,11 @@ function localizeApp() {
 function initializeA2HS() {
   window.addEventListener('beforeinstallprompt', function(event) {
     event.preventDefault();
-    app.a2hs = event;
+		app.a2hs = event;
+		var dismissed = false;
     var dialog = app.dialog.create({
       title: '',
-      content: '<div class="block no-margin no-padding text-align-center" style="font-size: 14px;"><img src="'+ window.config.app.logo +'" width="84" alt="" /><p><b>Add Nectar to your Home Screen?</b></p><p>Install Nectar on your home screen for quick and easy access when you\'re on the go.</p></div>',
+      content: '<div class="block no-margin no-padding text-align-center" style="font-size: 14px;"><img src="'+ window.config.app.logo +'" width="84" alt="" /><p><b>Add the Heart Water app to your Home Screen?</b></p><p>Install the Heart Water app on your home screen for quick and easy access.</p></div>',
       verticalButtons: true,
       buttons: [
         {
@@ -252,7 +253,7 @@ function initializeA2HS() {
               .then(function(choice) {
               if (choice.outcome == 'accepted') {
                 app.toast.show({
-                  text: 'Yaay! Added to Home Screen',
+                  text: 'Yay! Added to Home Screen',
                   position:'bottom',
                   cssClass: 'toast-round bg-color-green'
                 });
@@ -271,12 +272,17 @@ function initializeA2HS() {
         },
         {
           text: 'No, Thanks',
-          color: 'gray'
+					color: 'gray',
+					onClick: function() {
+						dismissed = true;
+					}
         }
       ]
     });
     setTimeout(function() {
-      dialog.open();
+			if (!dismissed) {
+				dialog.open();
+			}
     }, 60000);
   });
 }

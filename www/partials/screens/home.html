@@ -15,17 +15,17 @@
 				</div>
         {{/js_if}}
 				<div class="title">
-					<img class="ios-only theme-light-only" src="assets/custom/img/logo-text-black.svg" height="24" alt="" />
-					<img class="ios-only theme-dark-only" src="assets/custom/img/logo-text-white.svg" height="24" alt="" />
-					<img class="md-only" src="assets/custom/img/logo-text-white.svg" height="24" alt="" />
+					<img class="ios-only theme-light-only" src="assets/custom/img/logo-text-black.svg" alt="" />
+					<img class="ios-only theme-dark-only" src="assets/custom/img/logo-text-color.svg" alt="" />
+					<img class="md-only" src="assets/custom/img/logo-text-color.svg" alt="" />
 				</div>
 				<div class="right">
 					<a href="#" class="link icon-only" @click="openLanguageSelector">
 						<i class="icon material-icons">language</i>
 					</a>
-					<a href="#" class="link icon-only" @click="openThemeSelector">
+					<!-- <a href="#" class="link icon-only" @click="openThemeSelector">
 						<i class="icon material-icons">palette</i>
-					</a>
+					</a> -->
 				</div>
 			</div>
 		</div>
@@ -37,16 +37,16 @@
 					<div class="swiper-wrapper">
 
 						<div class="swiper-slide">
-							<div class="slide-content" style="background-image: linear-gradient(-20deg, #F77062 0%, #FE5196 100%);">
+							<div class="slide-content" style="background-image: linear-gradient(-20deg, #FE5196 0%, #F77062 100%);">
 								<div class="slide-media">
 									<img src="assets/custom/img/logo-white.svg" width="56" alt="" />
 								</div>
-								<div class="slide-title">Welcome to Nectar</div>
-								<div class="slide-text">Mobile Web App Kit</div>
+								<div class="slide-title">Heart Water by Sky Springs</div>
+								<div class="slide-text">Serving the world one drop at a time</div>
 							</div>
 						</div>
 
-						<div class="swiper-slide">
+						<!-- <div class="swiper-slide">
 							<div class="slide-content" style="background-image: linear-gradient(-20deg, #667EEA 0%, #764BA2 100%);">
 								<div class="slide-media">
 									<i class="fa-stack fa-2x">
@@ -57,46 +57,46 @@
 								<div class="slide-title">Modern & Responsive</div>
 								<div class="slide-text">Nectar is designed with modern trends and techniques in mind. It will look smashing on every device.</div>
 							</div>
-						</div>
+						</div> -->
 
 						<div class="swiper-slide">
-							<div class="slide-content" style="background-image: linear-gradient(-20deg, #FC6076 0%, #FF9A44 100%);">
+							<div class="slide-content" style="background-image: linear-gradient(-20deg, #396A96 0%, #33A3E6 100%);">
 								<div class="slide-media">
 									<i class="fa-stack fa-2x">
 										<span class="fas fa-circle fa-stack-2x text-color-white"></span>
-										<span class="fas fa-pencil-ruler fa-stack-1x" style="color: #FF9A44;"></span>
+										<span class="fas fa-qrcode fa-stack-1x" style="color: #33A3E6;"></span>
 									</i>
 								</div>
-								<div class="slide-title">Intuitive UI/UX</div>
-								<div class="slide-text">Nectar takes advantage of common design patterns, allowing for a seamless experience for users of all levels.</div>
+								<div class="slide-title">Water Report</div>
+								<div class="slide-text">Scan the QR code on your bottle or pouch to learn exactly what's in your water.</div>
 							</div>
 						</div>
 
 						<div class="swiper-slide">
-							<div class="slide-content" style="background-image: linear-gradient(-20deg, #2AF598 0%, #009EFD 100%);">
+							<div class="slide-content" style="background-image: linear-gradient(-20deg, #4D8615 0%, #62E31C 100%);">
 								<div class="slide-media">
 									<i class="fa-stack fa-2x">
 										<span class="fas fa-circle fa-stack-2x text-color-white"></span>
-										<span class="fas fa-palette fa-stack-1x" style="color: #2AF598;"></span>
+										<span class="fas fa-hand-holding-heart fa-stack-1x" style="color: #62E31C;"></span>
 									</i>
 								</div>
-								<div class="slide-title">Easily Customizable</div>
-								<div class="slide-text">Easily customize Nectar to suit your needs and bring your product to life.</div>
+								<div class="slide-title">Support Charities</div>
+								<div class="slide-text">Partial proceeds of every Heart Water sold helps to fund important charities.</div>
 							</div>
 						</div>
 
 						<div class="swiper-slide">
-							<div class="slide-content" style="background-image: linear-gradient(-20deg, #C471F5 0%, #FA71CD 100%);">
+							<div class="slide-content" style="background-image: linear-gradient(-20deg, #F59700 0%, #E2AC00 100%);">
 								<div class="slide-media">
 									<i class="fa-stack fa-2x">
 										<span class="fas fa-circle fa-stack-2x text-color-white"></span>
-										<span class="fas fa-rocket fa-stack-1x" style="color: #FA71CD;"></span>
+										<span class="fas fa-donate fa-stack-1x" style="color: #F59700;"></span>
 									</i>
 								</div>
-								<div class="slide-title">Explore Nectar</div>
-								<div class="slide-text">Nectar will drive your product forward. It will help you stand out in the market.</div>
+								<div class="slide-title">Donate Today</div>
+								<div class="slide-text">Learn more about the charity that your purchase is helping to support, and donate additional funds to the cause.</div>
 								<div class="slide-actions">
-									<a href="{{$root.config.envato.itemUrl}}" target="_blank" class="button button-fill color-white external" style="color: #FA71CD;">Buy Now</a>
+									<a href="{{$root.config.donate.itemUrl}}" target="_blank" class="button button-fill color-white external" style="color: #FA71CD;">Donate Now</a>
 								</div>
 							</div>
 						</div>
@@ -110,78 +110,52 @@
 					<li>
 						<div class="item-content">
 							<div class="item-media">
-								<img src="assets/custom/img/framework7.svg" width="48" alt="" />
+								<img src="assets/custom/img/SkyBottleBlueLid-small.png" width="48" alt="" />
 							</div>
 							<div class="item-inner">
 								<div class="item-title-row">
-									<div class="item-title">Based on Framework7</div>
+									<div class="item-title">Cloud-based (rain clouds, that is)</div>
 								</div>
-								<div class="item-text">Nectar is built on the top of Framework7 — a fully-featured HTML mobile framework to develop apps with native Android & iOS look and feel.</div>
+								<div class="item-text">Captured directly from the clouds, Sky Springs Rain never touches the ground. With no additives, minerals, or pollutants, it is the purest water on the market.</div>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div class="item-content">
 							<div class="item-media">
-								<img src="assets/custom/img/android-ios.svg" width="48" alt="" />
+								<img src="assets/custom/img/Pillow-small.png" width="48" alt="" />
 							</div>
 							<div class="item-inner">
 								<div class="item-title-row">
-									<div class="item-title">Platform-agnostic UI/UX</div>
+									<div class="item-title">No chemicals added — ever!</div>
 								</div>
-								<div class="item-text">Provide your users the best experience on Android and iOS using Google's Material Design and Apple's Cupertino Design respectively.</div>
+								<div class="item-text">Packaged in biodegradable bottles and caps or pillows in the heart of Texas. We add no chemicals or additives to our filtered, UV and ozone treated rainwater.</div>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div class="item-content">
 							<div class="item-media">
-								<img src="assets/custom/img/menu.svg" width="48" alt="" />
+								<img src="assets/custom/img/SkyBottleBlueLid-small.png" width="48" alt="" />
 							</div>
 							<div class="item-inner">
 								<div class="item-title-row">
-									<div class="item-title">Multiple Navigation Patterns</div>
+									<div class="item-title">Sky Spring delivers pure sustainably sourced rainwater with pure intentions.</div>
 								</div>
-								<div class="item-text">Nectar comes with two navigation patterns most commonly used in mobile apps — Hamburger and Tab Bar.</div>
+								<div class="item-text">Our packaging is 100% recyclable, our bottles use ENSO RESTORE which has a landfill biodegradability of 32.7% in 10 months in an anaerobic landfill.</div>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div class="item-content">
 							<div class="item-media">
-								<img src="assets/custom/img/translate.svg" width="48" alt="" />
+								<img src="assets/custom/img/Pillow-small.png" width="48" alt="" />
 							</div>
 							<div class="item-inner">
 								<div class="item-title-row">
-									<div class="item-title">Internationalization & RTL Support</div>
+									<div class="item-title">ARCSA</div>
 								</div>
-								<div class="item-text">Build your app for users around the world by localizing your user interface in various languages.</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-content">
-							<div class="item-media">
-								<img src="assets/custom/img/pwa.svg" width="48" alt="" />
-							</div>
-							<div class="item-inner">
-								<div class="item-title-row">
-									<div class="item-title">Progressive Web App Ready</div>
-								</div>
-								<div class="item-text">Add functionalities such as offline working, push notifications to your mobile web app with the help of service workers and provide your users the best of both worlds — the web and the app.</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-content">
-							<div class="item-media">
-								<img src="assets/custom/img/phonegap.svg" width="48" alt="" />
-							</div>
-							<div class="item-inner">
-								<div class="item-title-row">
-									<div class="item-title">Hybrid App Ready</div>
-								</div>
-								<div class="item-text">Turn your mobile web app into native mobile app for Android or iOS using Apache Cordova or Adobe PhoneGap.</div>
+								<div class="item-text">For each purchase of the co-branded ARCSA product that Sky Springs sells, we will donate a portion to the non-profit for rainwater resources and education.</div>
 							</div>
 						</div>
 					</li>

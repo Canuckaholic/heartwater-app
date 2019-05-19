@@ -1,7 +1,7 @@
 {
-	"name": "Nectar Lite",
-	"short_name": "Nectar Lite",
-	"description": "Mobile Web App Kit",
+	"name": "Heart Water",
+	"short_name": "Heart Water",
+	"description": "Heart Water by Sky Springs",
 	"start_url": ".",
 	"display": "standalone",
 	"orientation": "portrait",

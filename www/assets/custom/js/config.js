@@ -9,10 +9,10 @@ window.config = {};
 */
 
 window.config.app = {
-	id: 'website.nectar.classic',
-	version: '2.3.0',
-	title: 'Nectar',
-	tagline: 'Mobile Web App Kit',
+	id: 'com.traxitt.heartwater',
+	version: '1.0.0',
+	title: 'Heart Water',
+	tagline: 'Serving the world one drop at a time',
 	logo: 'assets/custom/img/logo.svg'
 };
 
@@ -35,6 +35,16 @@ window.config.algoliaPlaces = {
 
 window.config.envato = {
 	itemUrl: 'https://themeforest.net/item/nectar-mobile-web-app-kit/20466093?ref=pmsgz'
+};
+
+/*
+|------------------------------------------------------------------------------
+| Donations
+|------------------------------------------------------------------------------
+*/
+
+window.config.donate = {
+	itemUrl: 'https://developer.apple.com/documentation/apple_pay_on_the_web'
 };
 
 /*
@@ -236,7 +246,7 @@ window.config.colors = {
 */
 
 window.config.theme = {
-	color: 'pink',
+	color: 'blue',
 	layout: 'light',
-  navigation: 'hamburger'
+  navigation: 'tabbar'
 };
