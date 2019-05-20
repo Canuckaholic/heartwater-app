@@ -22,3 +22,28 @@
     }
   }
 }
+
+.block-title {
+  img {
+    margin-bottom: 10px;
+  }
+}
+
+.swiper-slide {
+  .slide-media {
+    max-height: 250px;
+    overflow: hidden;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.md, .ios {
+  .no-top-margin {
+    margin-top: 0 !important;
+  }
+}

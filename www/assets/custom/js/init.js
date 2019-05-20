@@ -171,12 +171,12 @@ function initializeViews() {
 		var screensView = app.views.create('.view-about', {
 			url: '/about'
 		});
-		var screensView = app.views.create('.view-components', {
-			url: '/components'
-		});
-		var screensView = app.views.create('.view-screens', {
-			url: '/screens'
-		});
+		// var screensView = app.views.create('.view-components', {
+		// 	url: '/components'
+		// });
+		// var screensView = app.views.create('.view-screens', {
+		// 	url: '/screens'
+		// });
 		// var moreView = app.views.create('.view-more', {
 		// 	url: '/more'
 		// });

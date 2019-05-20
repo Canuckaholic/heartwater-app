@@ -132,7 +132,11 @@
 				var self = this;
 				$('.splash-media .logo').fadeIn(2000, function() {
 					// Animation complete
-					self.loadNextScreen();
+					if (true) {
+						app.views.current.router.navigate('/water-report/view-report');
+					} else {
+						self.loadNextScreen();
+					}
   			});
 			},
 			showPreloader: function() {
@@ -145,6 +149,7 @@
 				var self = this;
 				setTimeout(function() {
 					if (localStorage.getItem('Nectar_OldUser')) {
+						console.log('User found in localStorage')
 						app.views.current.router.navigate(self.nextScreen);
 					}
 					else {
