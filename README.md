@@ -17,9 +17,9 @@ All the data gathered during the production of water would be summarized into a 
 * Spectrometer Readings
 * Processed Water Quality
 * Packaging Metrics
-* Personnel Involved
+* Personnel Involved, e.g. Quality Control Manager
 
-This QR code would use the iPhone/Android native Camera apps in order to launch a unique static web page to:
+This QR code would use the iPhone/Android native Camera apps in order to launch a unique static web page (or app?) to:
 
 1. Provide ingredients and production data about the bottle
 1. Provide details about the charity that that bottle purchase funded
@@ -41,9 +41,11 @@ This repo is the static website that will be launched when the user scans the QR
 
 ## Delivery & Project Plan
 
-The website project plan is [here](https://github.com/orgs/traxitt/projects/1) and Release milestones are defined in the repo
+The website project plan is [here](https://github.com/orgs/traxitt/projects/1) and Release milestones are defined in the repo.
 
-The static website will be hosted in a public GitHub Page
+We will be using Kanban to track development tasks.
+
+The static website will be hosted in a public GitHub Page.
 
 ## Technologies
 
@@ -53,4 +55,8 @@ The project will use:
 1. JavaScript
 1. Apple Pay
 
+## Other considerations
 
+* ~Build an iOS and/or Android companion app. If the user has the app installed, the app will launch when the QR code is scanned, otherwise the website is opened.~
+* ~We would build this as a hybrid app using Cordova.~
+* This demo is scheduled for Wed May 22 at 10am and then will be deleted. It is merely a PoC and a sales tool. Future development will be subject to landing SSR
