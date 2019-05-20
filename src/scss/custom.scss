@@ -1,3 +1,7 @@
+.larger {
+  font-size: 1.1em;
+}
+
 .navbar {
   background-color: #000 !important;
 
@@ -46,4 +50,18 @@
   .no-top-margin {
     margin-top: 0 !important;
   }
+}
+
+.note.note-success.transparent {
+  background-color: rgba(124,210,143,.7) !important;
+  color: #444 !important;
+}
+
+.note.note-info.transparent {
+  background-color: rgba(166,216,224,.7) !important;
+  color: #444 !important;
+}
+
+.event-header {
+  justify-content: flex-start !important;
 }

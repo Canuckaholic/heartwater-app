@@ -4,10 +4,18 @@
       <div class="navbar">
         <div class="navbar-inner">
           <div class="left">
-            <a href="#" class="link back">
-              <i class="icon icon-back"></i>
-              <span class="ios-only" data-i18n="back">Back</span>
-            </a>
+            {{#js_if "app.data.config.navigation.reportOnly"}}
+              <div class="title">
+                <img class="ios-only theme-light-only" src="assets/custom/img/logo-text-black.svg" alt="" />
+                <img class="ios-only theme-dark-only" src="assets/custom/img/logo-text-color.svg" alt="" />
+                <img class="md-only" src="assets/custom/img/logo-text-color.svg" alt="" />
+              </div>
+            {{else}}
+              <a href="#" class="link back">
+                <i class="icon icon-back"></i>
+                <span class="ios-only" data-i18n="back">Back</span>
+              </a>
+            {{/js_if}}
           </div>
           <div class="title md-only" data-i18n="water-report">Water Report</div>
           <div class="subnavbar ios-only">
@@ -19,15 +27,7 @@
       </div>
   
       <div class="page-content">
-  
-        <div class="event-header" style="background-image: url('assets/custom/img/water-landscape.png');">
-          <img class="img-responsive" src="assets/custom/img/SkyBottleBlueLid-small.png" width="75" alt="" />
-        </div>
-  
-        <div class="block margin-vertical">
-          <div class="event-title">Heart Water - Half Liter Bottle</div>
-        </div>
-  
+
         <div class="toolbar tabbar tabbar-scrollable tabbar-sticky">
           <div class="toolbar-inner">
             <a href="#tab-overview" class="tab-link tab-link-active">Overview</a>
@@ -35,11 +35,40 @@
             <a href="#tab-faq" class="tab-link">FAQ</a>
           </div>
         </div>
-  
+
+        <!-- <div class="block margin-vertical">
+          <div class="event-title">Heart Water - Half Liter Bottle</div>
+        </div> -->
+
         <div class="tabs">
-  
           <div id="tab-overview" class="tab tab-active">
+            <div class="event-header" style="background-image: url('assets/custom/img/water-report/woman-at-a-water-well-africa-adjusted.jpg');">
+              <div class="note note-info transparent">
+                <p class="larger">
+                  By purchasing this bottle of Heart Water you contributed $1 towards our $10,000 goal for the Bridge Water Project in Kenya.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header justify-content-space-between">
+                <span>Help us reach our goal!</span>
+                <a href="https://thewaterproject.org/give-water" target="_blank" class="button button-fill button-small bg-color-orange-4 external">Donate Now</a>
+              </div>
+              <div class="card-content card-content-padding text-align-center">
+                <div class="gauge gauge-semicircle"></div>
+                <!-- <div class="progressbar progressbar-determinate-inline" data-progress="75"></div> -->
+                <p>
+                  Continue your support by making a donation, sponsoring a water project, or becoming a member.
+                </p>
+              </div>
+              <div class="card-footer">
+                  <span>This charitiable initiative is by The Water Project</span>
+                <a href="#tab-charity" class="tab-link button button-fill button-small bg-color-blue-4">Learn More</a>
+              </div>
+            </div>
             <div class="list no-hairlines-between margin-vertical no-top-margin">
+              <h2>Traceability</h2>
               <ul>
                 <li class="list-group-title">Scanned on August 1, 2019</li>
                 <li>
@@ -201,19 +230,7 @@
                       By purchasing this bottle of Heart Water you contributed $1 towards our $10,000 goal for the Bridge Water Project in Kenya.
                     </p>
                   </li>
-                  <li class="card">
-                    <div class="card-header justify-content-space-between">
-                      <span>Help us reach our goal</span>
-                      <a href="https://thewaterproject.org/give-water" target="_blank" class="button button-fill button-small bg-color-orange-4 external">Donate Now</a>
-                    </div>
-                    <div class="card-content card-content-padding text-align-center">
-                      <div class="gauge gauge-semicircle"></div>
-                      <!-- <div class="progressbar progressbar-determinate-inline" data-progress="75"></div> -->
-                      <p>
-                        Continue your support by making a donation, sponsoring a water project, or becoming a member.
-                      </p>
-                    </div>
-                  </li>
+
                   <li class="list-group-title">DIGGING WELLS IN AFRICA</li>
                   <li class="card">
                     <div class="card-header justify-content-space-between">

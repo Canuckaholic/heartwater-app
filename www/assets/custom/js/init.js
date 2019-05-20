@@ -89,8 +89,8 @@ var app = new Framework7({
 	},
 	view: {
 		pushState: (function() {
-			if (window.config.theme.navigation == 'hamburger' || window.config.pushState.enabled) {
-				console.log('Enable pushState if not Cordova app')
+			if (window.config.theme.navigation == 'hamburger' || window.config.navigation.pushState) {
+				console.log('Enable pushState (if not Cordova app)')
 				return !Framework7.device.cordova;
 			}
 			else {
@@ -172,12 +172,12 @@ function initializeViews() {
 		var screensView = app.views.create('.view-about', {
 			url: '/about'
 		});
-		// var screensView = app.views.create('.view-components', {
-		// 	url: '/components'
-		// });
-		// var screensView = app.views.create('.view-screens', {
-		// 	url: '/screens'
-		// });
+		var screensView = app.views.create('.view-components', {
+			url: '/components'
+		});
+		var screensView = app.views.create('.view-screens', {
+			url: '/screens'
+		});
 		// var moreView = app.views.create('.view-more', {
 		// 	url: '/more'
 		// });

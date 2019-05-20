@@ -3,8 +3,8 @@
 window.routes = [
 	{
 		path: '/',
-		// componentUrl: './partials/screens/splash.html'
-		componentUrl: './partials/custom/view-report.html'
+		componentUrl: './partials/screens/splash.html'
+		// componentUrl: './partials/custom/view-report.html'
 	},
 	{
 		path: '/walkthrough',

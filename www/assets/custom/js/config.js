@@ -257,6 +257,7 @@ window.config.theme = {
 |------------------------------------------------------------------------------
 */
 
-window.config.pushState = {
-	enabled: true
+window.config.navigation = {
+  pushState: false,
+  reportOnly: false
 };
