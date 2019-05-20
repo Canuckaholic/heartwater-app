@@ -248,7 +248,7 @@ window.config.colors = {
 window.config.theme = {
 	color: 'blue',
 	layout: 'light',
-  navigation: 'tabbed'
+  navigation: 'hamburger'
 };
 
 /*
@@ -259,5 +259,5 @@ window.config.theme = {
 
 window.config.navigation = {
   pushState: false,
-  reportOnly: false
+  reportOnly: true
 };

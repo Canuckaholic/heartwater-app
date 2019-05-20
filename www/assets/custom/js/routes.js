@@ -3,8 +3,8 @@
 window.routes = [
 	{
 		path: '/',
-		componentUrl: './partials/screens/splash.html'
-		// componentUrl: './partials/custom/view-report.html'
+		// componentUrl: './partials/screens/splash.html'
+		componentUrl: './partials/custom/view-report.html'
 	},
 	{
 		path: '/walkthrough',
@@ -24,7 +24,7 @@ window.routes = [
 			},
 			{
 				path: '/view-report',
-				componentUrl: './partials/custom/view-report.html'
+				componentUrl: './partials/custom/view-report.html',
 			},
 			{
 				path: '/view-report-history',

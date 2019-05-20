@@ -94,6 +94,7 @@ var app = new Framework7({
 				return !Framework7.device.cordova;
 			}
 			else {
+				console.log('No pushState')
 				return false;
 			}
 		})(),
@@ -166,18 +167,19 @@ function initializeViews() {
 	});
 
 	if (window.config.theme.navigation == 'tabbar') {
-		var componentsView = app.views.create('.view-water-report', {
+		console.log('creating Views')
+		var waterReportView = app.views.create('.view-water-report', {
 			url: '/water-report'
 		});
-		var screensView = app.views.create('.view-about', {
+		var aboutView = app.views.create('.view-about', {
 			url: '/about'
 		});
-		var screensView = app.views.create('.view-components', {
-			url: '/components'
-		});
-		var screensView = app.views.create('.view-screens', {
-			url: '/screens'
-		});
+		// var screensView = app.views.create('.view-components', {
+		// 	url: '/components'
+		// });
+		// var screensView = app.views.create('.view-screens', {
+		// 	url: '/screens'
+		// });
 		// var moreView = app.views.create('.view-more', {
 		// 	url: '/more'
 		// });

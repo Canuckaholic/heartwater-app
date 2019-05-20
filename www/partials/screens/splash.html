@@ -145,10 +145,11 @@
 				var self = this;
 				setTimeout(function() {
 					if (localStorage.getItem('Nectar_OldUser')) {
-						console.log('User found in localStorage')
+						console.log('User found in localStorage');
 						app.views.current.router.navigate(self.nextScreen);
 					}
 					else {
+						console.log('Navigating to home');
 						app.views.current.router.navigate('/home');
 					}
 				}, self.splashDuration);
