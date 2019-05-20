@@ -24,7 +24,8 @@ var app = new Framework7({
 			return document.location.search.split('theme=')[1].split('&')[0];
 		}
 		else {
-			return 'auto';
+			console.log('Loading app using md theme.')
+			return 'md';
 		}
 	})(),
 	rtl: false,
