@@ -248,7 +248,7 @@ window.config.colors = {
 window.config.theme = {
 	color: 'blue',
 	layout: 'light',
-  navigation: 'hamburger'
+  navigation: 'tabbed'
 };
 
 /*
@@ -258,5 +258,5 @@ window.config.theme = {
 */
 
 window.config.pushState = {
-	enabled: false
+	enabled: true
 };
