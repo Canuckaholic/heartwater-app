@@ -132,11 +132,7 @@
 				var self = this;
 				$('.splash-media .logo').fadeIn(2000, function() {
 					// Animation complete
-					if (true) {
-						app.views.current.router.navigate('/water-report/view-report');
-					} else {
-						self.loadNextScreen();
-					}
+					self.loadNextScreen();
   			});
 			},
 			showPreloader: function() {

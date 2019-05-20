@@ -89,7 +89,8 @@ var app = new Framework7({
 	},
 	view: {
 		pushState: (function() {
-			if (window.config.theme.navigation == 'hamburger') {
+			if (window.config.theme.navigation == 'hamburger' || window.config.pushState.enabled) {
+				console.log('Enable pushState if not Cordova app')
 				return !Framework7.device.cordova;
 			}
 			else {
