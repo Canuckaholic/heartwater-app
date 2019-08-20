@@ -102,13 +102,15 @@
 			return {
 				animationDuration: 1000,
 				nextScreen: '/home',
-				splashDuration: 0
+				splashDuration: 100
 			}
 		},
 		methods: {
 			hideToolbar: function() {
+				console.log('Hiding toolbar')
 				var self = this;
 				setTimeout(function() {
+					console.log('hide toolbar');
 					self.$('.toolbar').addClass('toolbar-hidden');
 				});
 			},
@@ -130,8 +132,16 @@
 			},
 			fadeInLogo: function() {
 				var self = this;
-				$('.splash-media .logo').fadeIn(2000, function() {
+				$('.splash-media .logo').fadeIn(2200, function() {
 					// Animation complete
+					if (window.config.theme.navigation == 'tabbar') {
+						var waterReportView = app.views.create('.view-water-report', {
+							url: '/water-report'
+						});
+						var aboutView = app.views.create('.view-about', {
+							url: '/about'
+						});
+					}
 					self.loadNextScreen();
   			});
 			},
@@ -158,6 +168,7 @@
 		on: {
 			pageInit: function() {
 				var self = this;
+				self.showPreloader();
 				self.hideToolbar();
 				// Need a suitable SVG logo to use animateLogo
 				// self.animateLogo();

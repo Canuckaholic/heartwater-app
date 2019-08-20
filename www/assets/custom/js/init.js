@@ -167,14 +167,13 @@ function initializeViews() {
 		url: '/'
 	});
 
-	if (window.config.theme.navigation == 'tabbar') {
-		console.log('creating Views')
-		var waterReportView = app.views.create('.view-water-report', {
-			url: '/water-report'
-		});
-		var aboutView = app.views.create('.view-about', {
-			url: '/about'
-		});
+	// if (window.config.theme.navigation == 'tabbar') {
+		// var waterReportView = app.views.create('.view-water-report', {
+		// 	url: '/water-report'
+		// });
+		// var aboutView = app.views.create('.view-about', {
+		// 	url: '/about'
+		// });
 		// var screensView = app.views.create('.view-components', {
 		// 	url: '/components'
 		// });
@@ -184,7 +183,7 @@ function initializeViews() {
 		// var moreView = app.views.create('.view-more', {
 		// 	url: '/more'
 		// });
-	}
+	// }
 }
 
 /*

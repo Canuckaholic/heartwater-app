@@ -1,6 +1,6 @@
 <template>
     <div class="page no-swipeback">
-  
+
       <div class="navbar">
         <div class="navbar-inner">
           {{#js_if "app.data.config.theme.navigation == 'hamburger'"}}
@@ -15,7 +15,7 @@
           </div>
           {{/js_if}}
           <div class="title">
-            <img class="ios-only theme-light-only" src="assets/custom/img/logo-text-black.svg" alt="" />
+            <img class="ios-only theme-light-only" src="assets/custom/img/logo-text-color.svg" alt="" />
             <img class="ios-only theme-dark-only" src="assets/custom/img/logo-text-color.svg" alt="" />
             <img class="md-only" src="assets/custom/img/logo-text-color.svg" alt="" />
           </div>
@@ -29,13 +29,13 @@
           </div>
         </div>
       </div>
-  
+
       <div class="page-content">
-  
+
         <div class="slider-hero">
           <div class="swiper-container">
             <div class="swiper-wrapper">
-  
+
               <div class="swiper-slide">
                 <div class="slide-content" style="background-image: url('assets/custom/img/rainfall.jpg');">
                   <div class="slide-media">
@@ -45,7 +45,7 @@
                   <div class="slide-text">Serving the world one drop at a time</div>
                 </div>
               </div>
-  
+
               <!-- <div class="swiper-slide">
                 <div class="slide-content" style="background-image: linear-gradient(-20deg, #667EEA 0%, #764BA2 100%);">
                   <div class="slide-media">
@@ -58,7 +58,7 @@
                   <div class="slide-text">Nectar is designed with modern trends and techniques in mind. It will look smashing on every device.</div>
                 </div>
               </div> -->
-  
+
               <div class="swiper-slide">
                 <div class="slide-content" style="background-image: url('assets/custom/img/rainfall.jpg'); background-position: bottom center;">
                   <div class="slide-media">
@@ -71,7 +71,7 @@
                   <div class="slide-text">Scan the QR code on your bottle or pouch to learn exactly what's in your water.</div>
                 </div>
               </div>
-  
+
               <div class="swiper-slide">
                 <div class="slide-content" style="background-image: url('assets/custom/img/rainfall2.jpg');">
                   <div class="slide-media">
@@ -84,7 +84,7 @@
                   <div class="slide-text">Partial proceeds of every Heart Water sold helps to fund important charities.</div>
                 </div>
               </div>
-  
+
               <div class="swiper-slide">
                 <div class="slide-content" style="background-image: url('assets/custom/img/rainfall2.jpg'); background-position: center center;">
                   <div class="slide-media">
@@ -100,11 +100,11 @@
                   </div>
                 </div>
               </div>
-  
+
             </div>
           </div>
         </div>
-  
+
         <div class="list media-list no-hairlines no-hairlines-between margin-vertical">
           <ul>
             <li>
@@ -161,23 +161,23 @@
             </li>
           </ul>
         </div>
-  
+
       </div>
-  
+
     </div>
   </template>
-  
+
   <style scoped>
     .slider-hero .swiper-container {
       height: 352px;
       height: 50vh;
     }
-  
+
     .slider-hero .swiper-slide {
       box-sizing: border-box;
       padding: 16px;
     }
-  
+
     .slider-hero .slide-content {
       align-items: center;
       border-radius: 16px;
@@ -191,34 +191,34 @@
       text-align: center;
       width: 100%;
     }
-  
+
     .slider-hero .slide-media {
       height: 56px;
     }
-  
+
     .slider-hero .slide-title {
       font-size: 22px;
       margin-top: 8px;
     }
-  
+
     .slider-hero .slide-text {
       font-size: 15px;
       margin-top: 8px;
     }
-  
+
     .slider-hero .slide-actions {
       margin-top: 16px;
     }
-  
+
     .swiper-container-3d .swiper-slide-shadow-left {
       background-image: none;
     }
-  
+
     .swiper-container-3d .swiper-slide-shadow-right {
       background-image: none;
     }
   </style>
-  
+
   <script>
     return {
       data: function() {
@@ -230,6 +230,7 @@
         showToolbar: function() {
           var self = this;
           setTimeout(function() {
+            console.log('show toolbar');
             self.$('.toolbar').removeClass('toolbar-hidden');
           });
         },
