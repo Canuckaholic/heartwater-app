@@ -33,7 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
-    "acorn": "^6.1.1",
+    "acorn": "^6.4.1",
     "acorn-jsx": "^5.0.1",
     "browser-sync": "^2.26.5",
     "cross-env": "^5.2.0",
